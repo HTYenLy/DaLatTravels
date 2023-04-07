@@ -1,0 +1,171 @@
+body {
+    font-family: Arial;
+    height: 100%;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    align-items: center;
+}
+.color {
+    background-color: rgb(198, 255, 198);
+}
+/* Chúng ta sẽ làm gì? */
+.g {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+.g > div {
+    text-align: center;
+}
+  /* Điểm đến đang hot */
+.hoptin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tin {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+    width: 270px;
+}
+.tin img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.tin1 {
+    margin-left: 5%;
+}
+.size-text {
+    font-size: small;
+}
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+  /* Chúng tôi đang làm gì? */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.grid-item1 {
+    padding: 20px;
+    text-align: justify;
+    font-size: large;
+    line-height: 25px;
+}
+.grid-item2 {
+    padding: 20px;
+}
+.cach {
+    padding: 10px;
+}
+  /* Footer */
+footer {
+    background-color: green;
+    width: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    color: white;
+}
+.item1 {
+    padding: 20px;
+}
+.item2 {
+    margin: 20px;
+    padding: 20px;
+    font-size: larger;
+}
+  
+     /* Điện thoại dọc */
+@media all and (min-width: 240px) {
+    /* Thông tin về chúng tôi */
+    .text1 {
+        font-size: large;
+        padding: 10px;
+        text-align: justify;
+    }
+    /* Chúng tôi đang làm gì? */
+    .grid-container {
+        display: none; 
+    }
+    /* footer */
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+    }
+    .item1 {
+        padding: 0;
+    }
+    .item2 {
+        margin: 0;
+        padding: 0;
+        font-size: medium;
+    }
+}
+  
+    /* Điện thoại ngang */
+@media all and (min-width: 576px) {
+    /* Chúng tôi đang làm gì? */
+    .grid-container{
+        display: none; 
+    }
+    /* Footer */
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        color: white;
+    }
+    .item1 {
+        padding: 20px;
+    }
+    .item2 {
+        padding: 20px;
+        font-size: larger;
+        text-align: justify;
+    }
+    /* Thông tin về chúng tôi */
+    .text1 {
+        font-size: large;
+        padding: 20px;
+        text-align: justify;
+    }
+}
+  
+                                                /* Máy tính bảng */
+@media all and (min-width: 768px){
+    .pad {
+        margin-left: 70px;
+    }
+    /* Thông tin về chúng tôi */
+    .text1 {
+        font-size: large;
+        text-align: justify;
+    }
+}
+  
+    /* màn hình máy tính */
+@media all and (min-width: 992px) {
+    .cach {
+        display: none;
+    }
+    .grid-container{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+}
+  

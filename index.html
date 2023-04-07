@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DaLatTravels </title>
+
+<!-- CSS MENU-->
+    <style>
+        .menu{
+            float: right;
+        }
+        .menu li{
+            display: inline;
+        }
+        a{
+            text-decoration: none;
+            margin: 10px;
+            font-size: large;
+        }
+        #menuSmall{
+            float: right;
+        }
+    /* điện thoại dọc */
+        @media all and (min-width: 240px){
+            .menu {
+                display: none;
+            }
+            .menu li {
+                width: 100%;
+                display: inline-block;
+                margin-left: 30%;
+            }
+            .banner{
+                width: 100%;
+            }
+        }
+    /* pc and tablet */
+        @media all and (min-width: 576px){
+            .menu {
+                display: block;
+            }
+            #menuSmall {
+                display: none;
+            }
+            .menu li {
+                display: inline;
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- MENU VÀ HEADER -->
+
+    <header>
+        <img src="img/logo.png" width="10%">
+        <i onclick="showMenu()" id="menuSmall" class="fa fa-bars" style="font-size:24px"></i>
+        <ul id="menuBig" class="menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="LienHe.html">Liên hệ</a></li>
+            <li><a href="TinTuc.html">Tin tức</a></li>
+        </ul>
+        <img class="banner" src="img/banner1.jpg" >
+        
+        <script>
+        function showMenu(){
+            if(document.getElementById('menuBig').style.display=='none'){
+                document.getElementById('menuBig').style.display='block';
+            }else{
+                document.getElementById('menuBig').style.display='none';
+            }
+        }
+        </script>
+    </header>
+
+<!-- THÔNG TIN VỀ CHÚNG TÔI -->
+
+    <br>
+    <h1 align="center"> Thông tin về chúng tôi </h1>
+    <hr width="50%"> 
+    <div class="text1">
+        <p>
+            <strong> Công ty cổ phần du lịch Lâm Đồng - Dalattourist® </strong>
+            là công ty du lịch - dịch vụ - lữ hành lâu đời nhất tại Đà Lạt, 
+            được thành lập từ năm 1976, <strong> Dalattourist® </strong>tiên phong 
+            cung cấp những dịch vụ du lịch gắn liền với thiên nhiên, văn hóa và bản sắc Đà Lạt. 
+            Với mong muốn đưa Đà Lạt đến gần bạn hơn và mỗi chuyến đi là một trải nghiệm mới trong đời, 
+            chúng tôi đảm bảo khai thác và đầu tư có chiều sâu nguồn tài nguyên thiên nhiên sẵn có để cho ra đời 
+            những sản phẩm chất lượng, độc đáo và thân thiện môi trường.
+        </p>
+    </div>
+
+<!-- ĐIỂM ĐẾN ĐANG HOT -->
+
+    <div class="color">
+        <br>
+        <h1 align="center"> Điểm đến đang hot </h1>
+        <hr width="50%"> <br>
+        <div class="hoptin">
+    <!-- ĐIỂM ĐẾN 1 -->
+            <div class="tin">
+                <header><img src="img/tq1.jpg" width="100%"></header><br>
+                <div class="tin1">
+                    <a href="#">Tour tham quan Khu du lịch Fresh Garden Đà Lạt</a><br><br>
+                    <div class="size-text">
+                        <span>⭐4.9</span> (897) * 25K+ Đã được đặt
+                        <p>Xác nhận tức thời <br><br>
+                        Từ <strong>💸250,000đ</strong> 200,000đ</p>
+                    </div>
+                </div>
+            </div>        
+    <!-- ĐIỂM ĐẾN 2 -->
+            <div class="tin">
+                <header><img src="img/tq2.jpg" height = "200px" width="270px"></header><br>
+                <div class="tin1">
+                    <a href="#">Tour tham quan Hồ Xuân Hương Đà Lạt</a><br><br>
+                    <div class="size-text">
+                        <span>⭐4.8</span> (523) * 20K+ Đã được đặt
+                        <p>Xác nhận tức thời <br><br>
+                        Từ <strong>💸100,000đ</strong> 💸80,000đ</p>
+                    </div>
+                </div>
+            </div>
+    <!-- ĐIỂM ĐẾN 3 -->
+            <div class="tin">
+                <header><img src="img/tq3.jpg" height = "200px" width="270px"></header><br>
+                <div class="tin1">
+                    <a href="#">Tour tham quan Ốc Đảo Xương Rồng – Komi Land</a><br><br>
+                    <div class="size-text">
+                        <span>⭐4.8</span> (597) * 20K+ Đã được đặt
+                        <p>Xác nhận tức thời <br><br>
+                        Từ <strong>💸100,000đ</strong> 💸90,000đ</p>
+                    </div>
+                </div>
+            </div>
+    <!-- ĐIỂM ĐẾN 4 -->
+            <div class="tin">
+                <header><img src="img/tq4.jpg" height = "200px" width="270px"></header><br>
+                <div class="tin1">
+                    <a href="#">Tour tham quan cánh đồng hoa Dalat Milk Farm</a><br><br>
+                    <div class="size-text">
+                        <span>⭐4.8</span> (597) * 20K+ Đã được đặt
+                        <p>Xác nhận tức thời <br><br>
+                        Từ <strong>💸240,000đ</strong> 💸250,000đ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div><br>
+
+<!-- DỊCH VỤ DU LỊCH -->
+
+    <div>
+        <h1 align="center"> Dịch vụ du lịch </h1>
+        <hr width="50%"> <br>
+        <div class="g">
+            <div><img src="img/hd1.jpg"></div>
+            <div><img src="img/hd2.jpg"></div>
+            <div><img src="img/hd3.jpg"></div>  
+            <div><img src="img/hd4.jpg"></div>
+        </div>
+    </div><br>
+
+<!-- CHÚNG TÔI ĐANG LÀM GÌ? bản Tablet and Laptop -->
+
+    <div class="color">
+        <br>
+        <h1 align="center"> Chúng tôi đang làm gì? </h1>
+        <hr width="50%">
+        <div class="grid-container">
+            <div class="grid-item1">
+                <p>
+                    Công ty hiện đang quản lý các khu du lịch nổi tiếng trên địa bàn tỉnh Lâm Đồng: 
+                    Khu du lịch Langbiang, thác Datanla, cáp treo đồi Robin, Đường Hầm Điêu Khắc,… <br><br>
+                    Bên cạnh các khu du lịch, <strong> Dalattourist® </strong> còn phát triển hệ thống dịch vụ rộng khắp bao gồm: 
+                    Nhà hàng, khách sạn, biệt thự, hotel cùng các hoạt động khám phá ngoài trời. <br><br>
+                    <strong>  VĂN PHÒNG CHÍNH: <br> </strong>
+                    01 Lê Đại Hành, phường 1, Tp Đà Lạt, tỉnh Lâm Đồng <br>
+                    Số điện thoại: (+84) *** *** **** <br>
+                    Hotline: (+84) ** **** ***  <br>
+                    Email: info@dalattourist.com.vn <br>
+                    Website: https://dalattourist.com.vn/ <br><br>
+                    <strong> VĂN PHÒNG ĐẠI DIỆN: <br> </strong>
+                    18A/40/1 Nguyễn Thị Minh Khai, phường Dakao, quận 1, <br> Tp Hồ Chí Minh <br>
+                    Số điện thoại: (+84) *** *** **** <br>
+                </p>
+            </div>
+            <div class="grid-item1">
+                <img src="img/chslj.jpg">
+            </div>
+        </div>
+
+<!-- CHÚNG TÔI ĐANG LÀM GÌ? bản mobile -->
+
+        <div class="cach">
+            <div class="pad">
+                <img src="img/chslj.jpg">
+            </div>
+            <p>
+                Công ty hiện đang quản lý các khu du lịch nổi tiếng trên địa bàn tỉnh Lâm Đồng: 
+                Khu du lịch Langbiang, thác Datanla, cáp treo đồi Robin, Đường Hầm Điêu Khắc,… <br><br>
+                Bên cạnh các khu du lịch, <strong> Dalattourist® </strong> còn phát triển hệ thống dịch vụ rộng khắp bao gồm: 
+                Nhà hàng, khách sạn, biệt thự, hotel cùng các hoạt động khám phá ngoài trời. <br><br>
+                
+                <strong>  VĂN PHÒNG CHÍNH: <br> </strong>
+                01 Lê Đại Hành, phường 1, Tp Đà Lạt, tỉnh Lâm Đồng <br>
+                Số điện thoại: (+84) *** *** **** <br>
+                Hotline: (+84) ** **** ***  <br>
+                Email: info@dalattourist.com.vn <br>
+                Website: https://dalattourist.com.vn/ <br><br>
+                
+                <strong> VĂN PHÒNG ĐẠI DIỆN: <br> </strong>
+                18A/40/1 Nguyễn Thị Minh Khai, phường Dakao, quận 1, <br> Tp Hồ Chí Minh <br>
+                Số điện thoại: (+84) *** *** **** 
+            </p>
+        </div><br>
+    </div>
+
+<!-- FOOTER -->
+
+    <h2 align="center"> Tận hưởng chuyến đi cùng <br>
+        Dalattourist® </h2><br>
+    <footer>
+        <div class="grid">
+            <div class="item1">
+                <h2>Công ty cổ phần du lịch Lâm Đồng</h2>
+                <p>
+                    Hotline: (+84) ** **** *** <br>
+                    VP chính: 01 Lê Đại Hành, Phường 1, Tp.Đà Lạt <br>
+                    VP chi nhánh: 18A/40/1 Nguyễn Thị Minh Khai, phường Dakao, quận 1, <br> Tp.Hồ Chí Minh
+                </p>
+            </div>
+            <div class="item2">
+                <p>
+                    Lấy chất lượng phục vụ chuyên nghiệp và mức độ hài
+                    lòng của khách hàng làm tiêu chí phấn đấu. 
+                    Luôn khai thác, đầu tư chiều sâu các sản phẩm dịch vụ độc đáo từ nguồn tài nguyên 
+                    có sẵn, đồng thời bảo tồn thiên nhiên bền vững, thân thiện với môi trường.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

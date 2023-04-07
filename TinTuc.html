@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DaLatTravels </title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <img src="img/logo.png" alt="logo" width="10%">
+                    <!--
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">
+                        <img src="img/logo.png" alt="logo" width="30%">
+                    </a>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dịch vụ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Điểm đến</a></li>
+                    <li><a class="dropdown-item" href="#">Nhà hàng</a></li>
+                    <li><a class="dropdown-item" href="#">Hoạt động</a></li>
+                    <li><a class="dropdown-item" href="#">Lưu trú</a></li>
+                    <li><a class="dropdown-item" href="#">Dịch vụ khác</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="LienHe.html">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="TinTuc.html">Tin tức</a>
+                </li>
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn bg-success text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<!-- BANNER -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div><br>
+
+<!-- NHÓM NÚT -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 p-2">
+                <a href="#">
+                    <img src="img/btn1.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-sm-3 p-2">
+               <a href="#">
+                    <img src="img/btn2.jpg" width="100%">
+               </a>
+            </div>
+            <div class="col-sm-3 p-2">
+                <a href="#">
+                    <img src="img/btn3.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-sm-3 p-2">
+                <a href="#">
+                    <img src="img/btn4.jpg" width="100%">
+                </a>
+            </div>
+        </div>    
+    </div>
+
+<!-- CHƯƠNG TRÌNH KHUYẾN MÃI HOT -->
+
+    <div class="text-center"><br>
+        <h2>Chương trình khuyến mãi Hot</h2><br>
+    </div>
+    <div class="container text-decoration-none">
+        <div class="row">
+    <!-- THAM QUAN 1 -->
+            <div class="col-sm-4 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/tq1.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Tour tham quan Khu du lịch Fresh Garden Đà Lạt</a>
+                        </h5><br>
+                        <p>⭐4.9 (897) * 25K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <img class="card-img-top" src="img/tq2.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Tour tham quan Hồ Xuân Hương Đà Lạt</a>
+                        </h5><br>
+                        <p>⭐4.8 (523) * 20K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+    <!-- THAM QUAN 2 
+            <div class="col-sm-4 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/tq2.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Tour tham quan Hồ Xuân Hương Đà Lạt</a>
+                        </h5><br>
+                        <p>⭐4.8 (523) * 20K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div>
+            </div> -->
+    <!-- THAM QUAN 3 -->
+            <div class="col-sm-4 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/tq3.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Tour tham quan Ốc Đảo Xương Rồng – Komi Land</a>
+                        </h5><br>
+                        <p>⭐4.9 (897) * 25K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <img class="card-img-top" src="img/tq4.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Tour tham quan cánh đồng hoa Dalat Milk Farm</a>
+                        </h5><br>
+                        <p>⭐4.8 (597) * 20K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+    <!-- THAM QUAN 4 
+            <div class="col-sm-4 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/tq4.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Tour tham quan cánh đồng hoa Dalat Milk Farm</a>
+                        </h5><br>
+                        <p>⭐4.8 (597) * 20K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div>
+            </div>-->
+    <!-- THAM QUAN 5 -->
+            <div class="col-sm-4 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/tq5.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Dalaland - Tiểu Bali thu nhỏ tại Đà Lạt</a>
+                        </h5><br>
+                        <p>⭐4.9 (897) * 25K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <img class="card-img-top" src="img/tq6.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Tour tham quan cánh đồng hoa Cẩm tú cầu</a>
+                        </h5><br>
+                        <p>⭐4.8 (597) * 20K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+    <!-- THAM QUAN 6 
+            <div class="col-sm-4 p-3 ">
+                <div class="card">
+                    <img class="card-img-top" src="img/tq6.jpg" width="100%" height="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Tour tham quan cánh đồng hoa Cẩm tú cầu</a>
+                        </h5><br>
+                        <p>⭐4.8 (597) * 20K+ Đã được đặt </p>
+                        <p>Từ 💸 <del class="text-danger">200,000đ </del><strong> 💸200,000đ</strong></p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div>
+            </div>-->
+        </div>    
+    </div>
+
+<!-- TIN TỨC NỔI BẬT -->
+    <div class="text-center"><br>
+        <h2>Tin tức nổi bật</h2><br>
+    </div>
+
+    <div class="container text-decoration-none">
+        <div class="row">
+    <!-- TIN TOP -->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="img/tt1.jpg" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                            <a href="#" class="text-decoration-none text-body">
+                                <h5>Vườn rau sạch Đà Lạt cung cấp các loại rau, củ, quả sạch 100%. <br></h5>
+                            </a>
+                            <a href="#" class="btn btn-primary ">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="img/tt1.jpg" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                            <a href="#" class="text-decoration-none text-body">
+                                <h5>Vườn rau sạch Đà Lạt cung cấp các loại rau, củ, quả sạch 100%. <br></h5>
+                            </a>
+                            <a href="#" class="btn btn-primary ">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- TIN MỚI NHẤT -->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="img/tt2.jpg" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                            <a href="#" class="text-decoration-none text-body">
+                                <h5>Vườn rau sạch Đà Lạt cung cấp các loại rau, củ, quả sạch 100%. <br></h5>
+                            </a>
+                            <a href="#" class="btn btn-primary ">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="card" >
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="img/tt1.jpg" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                            <a href="#" class="text-decoration-none text-body">
+                                <h5>Vườn rau sạch Đà Lạt cung cấp các loại rau, củ, quả sạch 100%. <br></h5>
+                            </a>
+                            <a href="#" class="btn btn-primary ">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+<!-- THANH CHUYỂN TIẾP -->
+
+    <div class="container mt-2 text-body">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><<</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">>></a></li>
+        </ul>
+    </div>
+
+<!-- FOOTER -->
+
+    <footer class="bg-success text-light">
+        <div class="container">
+            <div class="row">
+    <!-- Cột 1 -->
+                <div class="col-md-8 "><br>
+                    <h5> Công ty CPDL Lâm Đồng</h5>
+                    <p>MST: 5800271921 <br>
+                    Hotline: (+84) 98 1166 *** <br>
+                    Văn phòng chính: 01 Lê Đại Hành, p.1, Đà Lạt. <br>
+                    VP chi nhánh: 18A/40/1 Nguyễn Thị Minh Khai, Phường Dakao, Quận 1, Tp Hồ Chí Minh</p>
+                </div>
+    <!-- Cột 2 -->
+                <div class="col-md-4"><br>
+                    <h5>Liên kết</h5>
+                    <p>Trang cổ đông <br>
+                        Điều khoản sử dụng <br>
+                        Quy định bảo mật <br>
+                        Download profile Dalattourist
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
